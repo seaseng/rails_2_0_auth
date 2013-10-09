@@ -5,7 +5,10 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'pg'
-gem 'sqlite3'
+group :development do
+  gem "binding_of_caller"
+  gem "better_errors"
+end
 
 gem "bcrypt-ruby", :require => "bcrypt"
 # Gems used only for assets and not required
