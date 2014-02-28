@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-RailsScratch::Application.initialize!
+Rails2Authentication::Application.initialize!

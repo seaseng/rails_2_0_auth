@@ -1568,3 +1568,61 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-09 01:50:30 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Connecting to database specified by database.yml
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (13.1ms)
+Compiled jquery.js  (2ms)  (pid 24932)
+Compiled jquery_ujs.js  (0ms)  (pid 24932)
+Compiled application.js  (76ms)  (pid 24932)
+Completed 200 OK in 235ms (Views: 140.5ms | ActiveRecord: 45.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /users.js - 200 OK (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-27 16:39:29 -0800
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-02-27 16:39:34 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-27 16:39:45 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hr8sVxZm6TeGdaJ9fthQeajThHo9r4EfMhEeQQCq5mE=", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (6.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 8.0ms | ActiveRecord: 6.8ms)

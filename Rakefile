@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsScratch::Application.load_tasks
+Rails2Authentication::Application.load_tasks
